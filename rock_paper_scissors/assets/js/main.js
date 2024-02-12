@@ -33,7 +33,7 @@ const spiel = (choice) => {
     output.innerHTML = `<p> You Choose : ${playersChoice}</p>
     <p> CPU Choose : ${computersChoice}</p>
     <p> Result : DRAW !</p>`;
-  } else if (playersChoice === "paper" && computersChoice === "scissors") {
+  } else if (playersChoice === "paper" && computersChoice == "scissors") {
     output.innerHTML = `<p> You Choose : ${playersChoice}</p>
     <p> CPU Choose : ${computersChoice}</p>
     <p> Result : CPU WINS !</p>`;
@@ -48,7 +48,7 @@ const spiel = (choice) => {
   } else {
     output.innerHTML = `<p> You Choose : ${playersChoice}</p>
     <p> CPU Choose : ${computersChoice}</p>
-    <p> Result : YOU LOOSE !</p>`;
+    <p> Result : YOU WON !</p>`;
   }
 };
 const restart = () => {
